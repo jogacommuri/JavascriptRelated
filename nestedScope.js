@@ -30,3 +30,14 @@ console.log(bam);
 console.log(i); // i global
 console.log(j);// ref error
 console.log(baz);//ref error
+
+
+var foo1;
+try {
+    foo1.length;
+}
+catch(err) { //var decl in catch has block scope
+    console.log(err)
+}
+
+console.log(err) // reference error
